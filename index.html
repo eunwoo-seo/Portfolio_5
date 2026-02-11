@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfoilo_5</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="./css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div class="modal-container modal1" style="display: none">
+            <div class="modal-box">
+                <h5>성함</h5>
+                <input type="text" id="name" style="display: block; margin-bottom: 15px;">
+                <h5>연락처</h5>
+                <input type="text" id="phone" style="display: block; margin-bottom: 15px;">
+                <button type="button" class="submit btn btn-dark" >입력완료</button>
+                <button type="button" class="close btn btn-dark">닫기</button>
+            </div>
+        </div>
+        
+        <div class="modal-container modal2" style="display: none">
+            <div class="modal-box">
+                <h5>영수증</h5>
+                <canvas id="canvas" width="350" height="350"></canvas>
+                <button type="button" class="close btn btn-dark" style="display: block;">닫기</button>
+            </div>
+        </div>
+        
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">집꾸미기</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">스토어</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">시공견적</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="main-container">
+            
+            
+            <input type="search" placeholder="검색어입력" class="search">
+            
+            <div class="card-container">
+                <div class="row card-data">
+                    
+                </div>
+            </div>
+            
+            <div class="cart-container mt-5">
+                <h5 style="font-weight: bold">장바구니</h5>
+                <div class="drag">
+                    <p class="drag-text">여기로 드래그</p>
+                </div>
+            </div>
+            
+            <div class="buy-container">
+                <h5>최종가격</h5>
+                <p>합계: <span class="totalPrice">0</span></p>
+                <button type="button" class="buy btn btn-dark">구매하기</button>
+            </div>
+            
+        </div>
+        
+
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
